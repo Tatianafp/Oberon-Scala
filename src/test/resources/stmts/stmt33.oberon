@@ -1,0 +1,22 @@
+MODULE SimpleModule;
+
+VAR
+    x: INTEGER;
+
+PROCEDURE fibo(n: INTEGER) : INTEGER;
+    BEGIN
+        IF(n = 0) THEN
+            RETURN 0
+        ELSIF(n = 1) THEN
+            RETURN 1
+        ELSE
+            RETURN fibo(n - 1) + fibo(n-2)
+    END;
+
+BEGIN
+    x := 1;
+    
+    write(fibo(x))
+END
+
+end SimpleModule.
